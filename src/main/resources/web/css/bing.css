@@ -366,6 +366,8 @@ body:has(.my) #restart {
     margin-top: 0.5rem;
     transition: transform 0.5s;
     cursor: pointer;
+    right: 1rem;
+    position: absolute;
 }
 #tail.open #expand{
     transform:rotate(90deg);
@@ -395,6 +397,9 @@ body:has(.my) #restart {
     cursor: pointer;
     min-width: 3rem;
     transition: all 0.5s;
+    right: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 #send:hover {
@@ -409,6 +414,7 @@ body:has(.my) #restart {
     background-color: #ffffff00;
     padding: 1rem 0 1rem 1rem;
     height: -webkit-fill-available;
+    position: absolute;
 }
 
 #input:focus-visible {
