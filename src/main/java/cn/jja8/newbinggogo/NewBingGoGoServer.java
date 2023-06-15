@@ -229,7 +229,7 @@ public class NewBingGoGoServer extends NanoWSD {
         //如果是NewBingGoGoWeb版本
         if(header.get("newbinggogoweb")!=null){
             String userCookie = header.get("cookie");
-            if (userCookie && userCookie.contains("_U=")) {
+            if ((userCookie != null) && userCookie.contains("_U=")) {
                 urlConnection.addRequestProperty("cookie", userCookie);
             } else {
                 //添加配置的随机cookie
